@@ -1,0 +1,14 @@
+.board {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+.Cell {
+  width: 30%;
+  height: 30%;
+  max-width: 12rem;
+  margin-right: 1%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem #000;
+  color: gray;
+}

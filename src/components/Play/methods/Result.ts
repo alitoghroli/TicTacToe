@@ -78,30 +78,6 @@ const Result = (Moves: string[]) => {
     }
   }
 
-  // //BestMoves
-  // for (let i = 6; i < 8; i++) {
-  //   if (sampleWin[i][1] === '') {
-  //     result = WinTemplate[i][1];
-  //     return { result, end };
-  //   }
-  //   if (sampleWin[i][1] === 'X') {
-  //     if (Xluck[i] === 1) {
-  //       if (Oluck[i] === 0) {
-  //         let rand: string[] = [];
-  //         sampleWin[i].map((value, index) => {
-  //           if (value === '') {
-  //             rand.push(WinTemplate[i][index]);
-  //           }
-  //         });
-  //         result = rand[Math.floor(Math.random() * rand.length)];
-  //         if (result !== '') {
-  //           return { result, end };
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
   //random Move
   for (let i = 0; i < 8; i++) {
     let rand: string[] = [];
@@ -125,27 +101,6 @@ const Result = (Moves: string[]) => {
       }
     }
   }
-
-  // //BestMoves
-  // for (let i = 6; i < 8; i++) {
-  //   sampleWin[i].map((value, index) => {
-  //     if (Xluck[i] === 1) {
-  //       if (index === 0 && value === 'X') {
-  //         if (sampleWin[i][2] === '') {
-  //           result = WinTemplate[i][2];
-  //         }
-  //       }
-  //       if (index === 2 && value === 'X') {
-  //         if (sampleWin[i][0] === '') {
-  //           result = WinTemplate[i][0];
-  //         }
-  //       }
-  //     }
-  //   });
-  //   if (result !== '') {
-  //     return { result, end };
-  //   }
-  // }
 
   return { result, end };
 };
